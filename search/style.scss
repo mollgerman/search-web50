@@ -1,0 +1,103 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+$button-background: #f8f9fa;
+
+.bar{
+    border-radius: 4rem;
+    max-width: 584px;
+    height: 44px;
+    text-align: center;
+    border: 1px solid #dfe1e5 ;
+    display: flex;
+    position: relative;
+    margin:auto;
+    margin-bottom:15px;
+
+    &:hover{
+        box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 0.11);
+    }
+} 
+
+
+.search-buttons{
+    margin:auto;
+    width:auto;
+    .btn2{
+        margin: 11px 4px;
+        padding: 0 16px;
+        font-family: arial, sans-serif;
+        border: 1px solid $button-background;
+        border-radius: 4px;
+        background-color: $button-background;
+        font-size: 14px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover{
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.103);
+            background-color: $button-background;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+    }
+}
+
+.nav-bar{
+    .btn{
+        margin:10px;
+        font-family: arial, sans-serif;
+    } 
+}
+
+
+
+.img{
+    margin-top: 15px;
+    margin-bottom:6px;
+    margin-left: 2px;
+    padding-bottom: 20px; 
+}
+
+form{
+    img.q{
+        margin:auto;
+        margin-left: 7px;
+        padding: 0px;
+        width: 16px;
+        height: 21px;
+    }
+    img.voice{
+        margin:auto;
+        padding-right: 7px;
+        width: 23px;
+        height: 22px;
+    }
+    input:focus {
+        outline-width: 0;
+    }
+    input.text{
+        margin: auto;
+        border:none;
+        width: 85%;
+    }
+}
+
+.qbutton{
+    margin:auto;
+    padding-right: 7px;
+    width: 25px;
+    height: 20px; 
+}
+.qbutton:focus {
+    outline-width: 0;
+}
