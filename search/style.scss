@@ -8,7 +8,7 @@
 // Then add additional custom code here
 
 $button-background: #f8f9fa;
-
+$shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.11);
 .bar{
     border-radius: 4rem;
     max-width: 584px;
@@ -21,7 +21,7 @@ $button-background: #f8f9fa;
     margin-bottom:15px;
 
     &:hover{
-        box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 0.11);
+        box-shadow: $shadow;
     }
 } 
 
